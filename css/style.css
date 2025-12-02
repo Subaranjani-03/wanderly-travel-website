@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Love+Light&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: #5b267a;
+  --font-family1: "poppins", sans-serif;
+  --font-family2: "Love Light", cursive;
+  --font-family3: "Montserrat", sans-serif;
+}
+.wrapper {
+  width: 100%;
+}
+/* --------home-page----------- */
+.home-page {
+  /* border: 3px solid red; */
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255, 0.3),
+      rgb(54, 10, 79, 0.6)
+    ),
+    url(../img/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 12em;
+  position: relative;
+}
+
+/* ---------navigation-------- */
+.header {
+  /* border: 2px solid; */
+  height: 12vh;
+  width: 100%;
+  z-index: 999;
+}
+.header .navbar {
+  /* border: 2px solid red; */
+  border-radius: 15px;
+  width: 70%;
+  height: 100%;
+}
+.navbar.navbar-expand-lg .navbar-brand {
+  /* border: 1px solid orangered; */
+  font-size: 2.2rem;
+  font-family: var(--font-family1);
+  font-weight: 600;
+  color: var(--text-color);
+}
+.collapse .navbar-nav {
+  /* border: 2px solid green; */
+  width: 60%;
+  font-family: var(--font-family3);
+}
+.navbar-nav .nav-item .nav-link {
+  /* border: 2px solid green; */
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: black;
+  transition: 0.8s;
+  position: relative;
+  transition: 0.8s;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: black;
+  text-shadow: 0 0 10px var(--text-color);
+}
+.navbar-nav .nav-item .contact-us {
+  border: 2px solid var(--text-color);
+  background-color: var(--text-color);
+  color: white;
+  transition: 0.8s;
+}
+.navbar-nav .nav-item .contact-us:hover {
+  color: var(--text-color);
+  background: none;
+  text-shadow: none;
+}
+.navbar-nav .nav-item .contact-us:hover::after {
+  display: none;
+}
+.icon .fa-user,
+.icon .fa-location-dot {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  transition: 0.8s;
+  cursor: pointer;
+}
+.icon .fa-user:hover,
+.icon .fa-location-dot:hover {
+  transform: translateY(-5px);
+}
+
+/* home-content */
+
+.home-content {
+  /* border: 2px solid; */
+  height: 14em;
+  width: 80em;
+  top: 40%;
+}
+.home-content .discover {
+  /* border: 1px solid red; */
+  font-size: 6rem;
+  font-family: var(--font-family2);
+}
+.home-content .discover-para {
+  font-family: var(--font-family1);
+  font-size: 1.2rem;
+}
+.home-content form {
+  font-family: var(--font-family1);
+  font-size: 1rem;
+}
+form input {
+  font-weight: 600;
+}
+form::placeholder {
+  font-weight: 500;
+}
+.home-content form .search-btn {
+  border: 1px solid var(--text-color);
+  border-radius: 20px;
+  width: 215px;
+  font-weight: 500;
+  padding: 12px;
+  background: linear-gradient(
+    to right,
+    #f29a2e,
+    #d68469,
+    #c97b80,
+    #c27694,
+    #b56dad,
+    #9b59e0,
+    #9252f2
+  );
+  color: white;
+}
+.home-content form .search-btn:hover {
+  background: linear-gradient(
+    to left,
+    #f29a2e,
+    #d68469,
+    #c97b80,
+    #c27694,
+    #b56dad,
+    #9b59e0,
+    #9252f2
+  );
+}
+
+.destination-types {
+  /* border: 3px solid; */
+  height: 10em;
+}
+.destination-types-card {
+  /* border: 3px solid; */
+  height: 10em;
+  width: 70%;
+  bottom: 70px;
+  border-radius: 10px;
+}
+.destination-types-card .card {
+  /* border: 1px solid red; */
+  width: 15em;
+  border-radius: 50% 50% 0% 0% / 45% 45% 0% 0%;
+  height: 100%;
+  transition: 0.8s;
+}
+.destination-types-card .card:hover {
+  background-color: var(--text-color);
+}
+.card-body i {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  background-color: #dfdeed;
+  border-radius: 50%;
+  height: 100px;
+  width: 70px;
+  padding: 15px;
+  transition: 0.8s;
+}
+.destination-types-card .card:hover i {
+  color: var(--text-color);
+  background-color: white;
+}
+.card-body p {
+  /* border: 1px solid; */
+  font-size: 1rem;
+  font-family: var(--font-family1);
+  transition: 0.8s;
+  cursor: pointer;
+}
+.destination-types-card .card:hover p {
+  color: white;
+}
+
+/*----------- about-page ------------*/
+.wrapper .about-page {
+  /* border: 3px solid red; */
+}
+.about-page .card {
+  /* border: 2px solid red; */
+  width: 90%;
+  height: 30em;
+}
+.about-page .card .row {
+  /* border: 2px solid; */
+  height: 100%;
+}
+.about-page .card .row .col-md-4 {
+  /* border: 1px solid; */
+  height: 100%;
+}
+.about-page .card .row .col-md-4 img {
+  height: 100%;
+  object-fit: cover;
+}
+.row .col-md-8 {
+  /* border: 2px solid; */
+}
+.row .col-md-8 .card-body {
+  font-family: var(--font-family1);
+}
+.row .col-md-8 .card-body .card-title {
+  color: var(--text-color);
+  font-weight: 600;
+}
+.row .col-md-8 .card-body .card-text {
+  text-align: justify;
+}
+.row .col-md-8 .card-body .btn {
+  border: 3px solid var(--text-color);
+  font-family: var(--font-family3);
+  width: 160px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  background: var(--text-color);
+  transition: 0.8s;
+}
+.row .col-md-8 .card-body .btn:hover {
+  background: none;
+  color: var(--text-color);
+}
+
+/*----------- destination-page ------------*/
+.wrapper .destination-page {
+  /* border: 3px solid red; */
+}
+.destination-page .destination-title {
+  font-family: var(--font-family3);
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+.destination-page .carousel {
+  /* border: 2px solid blue; */
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.carousel .carousel-inner .carousel-item {
+  height: 85vh;
+}
+.carousel .carousel-inner .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-inner .carousel-item .carousel-caption {
+  border-radius: 20px;
+  color: white;
+  background: rgb(0, 0, 0, 0.4);
+}
+.carousel-inner .carousel-item .carousel-caption .btn {
+  border: 3px solid var(--text-color);
+  width: 120px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  background: var(--text-color);
+  transition: 0.8s;
+}
+.carousel-inner .carousel-item .carousel-caption .btn:hover {
+  background: none;
+}
+
+/*------- desination-page-card --------*/
+.destination-page .destination-page-card {
+  /* border: 2px solid blue; */
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.destination-page-card .row {
+  /* border: 2px solid green; */
+  width: 80%;
+}
+.destination-page-card .row .col .card {
+  overflow: hidden;
+}
+.destination-page-card .row .col .card img {
+  transition: 0.8s;
+}
+.destination-page-card .row .col .card:hover img {
+  transform: scale(1.1);
+}
+.destination-page-card .row .col .card .card-body h5 {
+  font-family: var(--font-family1);
+}
+.destination-page-card .row .col .card .card-body p {
+  font-family: var(--font-family3);
+}
+.card .card-footer .btn {
+  border: 3px solid var(--text-color);
+  width: 120px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  background: var(--text-color);
+  transition: 0.8s;
+}
+.card .card-footer .btn:hover {
+  background: none;
+  color: var(--text-color);
+}
+/*----------- contact-page ------------*/
+.wrapper .contact-page {
+  /* border: 3px solid red; */
+}
+
+.contact-page .contact-content {
+  /* border: 2px solid var(--text-color); */
+  height: 30em;
+  width: 90%;
+  margin-top: 60px;
+  /* border-radius: 20px; */
+}
+/*---- left-contact-page -----*/
+.contact-content .contact-details {
+  /* border: 2px solid red; */
+  width: 35%;
+  height: 60%;
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom right,
+    rgb(91, 38, 122, 0.7),
+    rgb(194, 118, 148, 0.7),
+    rgb(242, 154, 46, 0.7)
+  );
+}
+.contact-details .contact-title {
+  font-family: var(--font-family3);
+  font-size: 2rem;
+  color: white;
+}
+.contact-details .card {
+  width: 18em;
+}
+
+.contact-details .card .list-group .list-group-item {
+  color: var(--text-color);
+}
+.contact-details .card .list-group a {
+  color: var(--text-color);
+}
+.contact-details .social-icons {
+  /* border: 2px solid red; */
+  width: 150px;
+}
+.contact-details .social-icons .fa-whatsapp,
+.contact-details .social-icons .fa-instagram,
+.contact-details .social-icons .fa-youtube {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  transition: 0.8s;
+}
+.contact-details .social-icons .fa-whatsapp:hover,
+.contact-details .social-icons .fa-instagram:hover,
+.contact-details .social-icons .fa-youtube:hover {
+  transform: translateY(5px);
+}
+
+/*---- right-contact-page -----*/
+.contact-content .form-content {
+  /* border: 2px solid red; */
+  width: 50%;
+  height: 90%;
+}
+.form-content form {
+  /* border: 2px solid blue; */
+  width: 90%;
+  height: 90%;
+}
+.form-control {
+  font-size: 2rem;
+}
+.form-content form .btn {
+  border: none;
+  width: 180px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(
+    to right,
+    #f29a2e,
+    #d68469,
+    #c97b80,
+    #c27694,
+    #b56dad,
+    #9b59e0,
+    #9252f2
+  );
+  color: white;
+}
+.form-content form .btn:hover {
+  background: linear-gradient(
+    to left,
+    #f29a2e,
+    #d68469,
+    #c97b80,
+    #c27694,
+    #b56dad,
+    #9b59e0,
+    #9252f2
+  );
+}
+
+/*----- footer --------*/
+footer {
+  /* border: 2px solid red; */
+  height: 6em;
+  width: 100%;
+  background-color: #31124a;
+}
+footer .foot {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: var(--font-family3);
+}
+footer .foot-name {
+  color: #f29a2e;
+}
+
+/* -------------------media query------------------- */
+/* -----tab media----- */
+@media all and (max-width: 768px) {
+  /*------- home-page -------*/
+  .navbar {
+    width: 90%;
+    height: 10vh;
+  }
+  .icon .fa-user,
+  .icon .fa-location-dot {
+    display: none;
+  }
+  .home-content {
+    width: 40em;
+    height: 10em;
+    top: 45%;
+  }
+  .home-content .discover {
+    font-size: 4.5rem;
+  }
+  .destination-types-card {
+    width: 95%;
+  }
+  .destination-types-card .card {
+    width: 18em;
+  }
+  .card-body i {
+    font-size: 1.8rem;
+    width: 60px;
+  }
+  .card-body p {
+    font-size: 0.9rem;
+  }
+
+  /*----------- about-page ------------*/
+  .about-page .card{
+    margin-bottom:20px ;
+    height: 35em;
+    width: 95%;
+  }
+
+  /*------- desination-page-card --------*/
+  .destination-page-card .row{
+    width: 95%;
+  }
+
+  /*----------- contact-page ------------*/
+  .contact-page .contact-content {
+    width: 95%;
+  }
+  /*---- left-contact-page -----*/
+  .contact-details .card {
+    width: 14em;
+  }
+  /*---- right-contact-page -----*/
+  .form-content form {
+    width: 100%;
+  }
+
+  /*------ footer ------*/
+  footer {
+    text-align: center;
+  }
+}
+
+/* -------mobile media------- */
+@media all and (max-width: 576px) {
+  /*------- home-page -------*/
+  .navbar {
+    width: 90%;
+    height: 10vh;
+  }
+  .navbar.navbar-expand-lg .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .icon .fa-user,
+  .icon .fa-location-dot {
+    display: none;
+  }
+  .home-content {
+    width: 20em;
+    height: auto;
+  }
+  .home-content .discover {
+    font-size: 2.2rem;
+  }
+  .home-content .discover-para {
+    font-size: 0.6rem;
+  }
+  .home-content form input,
+  .home-content form::placeholder,
+  .home-content form .search-btn {
+    font-size: 0.7rem;
+  }
+  .home-content form .search-btn {
+    width: 150px;
+    padding: 0;
+  }
+
+  .destination-types {
+    height: 5em;
+  }
+  .destination-types-card {
+    height: auto;
+    width: auto;
+    bottom: 10px;
+  }
+  .destination-types-card .card {
+    width: 52px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  .card-body i {
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+  }
+  .card-body p {
+    font-size: 0.6rem;
+  }
+
+   /*----------- about-page ------------*/
+   
+  .about-page .card{
+    height: auto;
+    margin-top: 20px;
+  }
+  /*----------- destination-page ------------*/
+  .destination-page .destination-title{
+    font-size: 1.5rem;
+  }
+  .destination-page .carousel{
+    margin-top: 0px;
+  }
+/*----------- contact-page ------------*/
+.contact-page .contact-content{
+  flex-direction: column;
+  height: auto;
+}
+.contact-content .contact-details{
+  height: auto;
+  width: auto;
+  padding: 20px;
+}
+.contact-details .contact-title{
+  font-size: 1.5rem;
+}
+.contact-details .card{
+  padding: 10px;
+  width: auto;
+}
+.contact-content .form-content{
+  height: auto;
+  width: auto;
+  padding: 15px;
+}
+.form-content form{
+  gap: 20px;
+}
+.form-content form .btn{
+  font-size: .9rem;
+  width: 150px;
+}
+
+  /*------ footer ------*/
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
+  footer .foot {
+    font-size: 0.8rem;
+  }
+}
