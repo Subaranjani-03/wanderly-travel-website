@@ -26,6 +26,7 @@
     ),
     url(../img/img1.jpg);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   gap: 12em;
@@ -202,9 +203,7 @@ form::placeholder {
 }
 
 /*----------- about-page ------------*/
-.wrapper .about-page {
-  /* border: 3px solid red; */
-}
+
 .about-page .card {
   /* border: 2px solid red; */
   width: 90%;
@@ -222,9 +221,7 @@ form::placeholder {
   height: 100%;
   object-fit: cover;
 }
-.row .col-md-8 {
-  /* border: 2px solid; */
-}
+
 .row .col-md-8 .card-body {
   font-family: var(--font-family1);
 }
@@ -252,9 +249,7 @@ form::placeholder {
 }
 
 /*----------- destination-page ------------*/
-.wrapper .destination-page {
-  /* border: 3px solid red; */
-}
+
 .destination-page .destination-title {
   font-family: var(--font-family3);
   font-size: 1.8rem;
@@ -330,9 +325,6 @@ form::placeholder {
   color: var(--text-color);
 }
 /*----------- contact-page ------------*/
-.wrapper .contact-page {
-  /* border: 3px solid red; */
-}
 
 .contact-page .contact-content {
   /* border: 2px solid var(--text-color); */
