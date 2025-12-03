@@ -37,13 +37,13 @@
 .header {
   /* border: 2px solid; */
   height: 12vh;
-  width: 100%;
+  width: 70%;
   z-index: 999;
 }
 .header .navbar {
   /* border: 2px solid red; */
   border-radius: 15px;
-  width: 70%;
+  width: 100%;
   height: 100%;
 }
 .navbar.navbar-expand-lg .navbar-brand {
@@ -103,7 +103,7 @@
 .home-content {
   /* border: 2px solid; */
   height: 14em;
-  width: 80em;
+  width: auto;
   top: 40%;
 }
 .home-content .discover {
@@ -162,8 +162,8 @@ form::placeholder {
 }
 .destination-types-card {
   /* border: 3px solid; */
-  height: 10em;
-  width: 70%;
+  height: 11em;
+  width: 80%;
   bottom: 70px;
   border-radius: 10px;
 }
@@ -173,6 +173,7 @@ form::placeholder {
   border-radius: 50% 50% 0% 0% / 45% 45% 0% 0%;
   height: 100%;
   transition: 0.8s;
+  padding: 10px 0;
 }
 .destination-types-card .card:hover {
   background-color: var(--text-color);
@@ -202,12 +203,48 @@ form::placeholder {
   color: white;
 }
 
+/*----------- booking-page ------------*/
+.wrapper .booking {
+  /* border: 2px solid red; */
+  margin-bottom: 80px;
+  padding: 15px;
+  background-color: rgb(49, 18, 74, 0.2);
+}
+.booking h2 {
+  font-family: var(--font-family3);
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.booking form {
+  /* border: 2px solid blue; */
+  width: 80%;
+  height: 10em;
+  font-family: var(--font-family1);
+}
+.booking form .col-auto .btn {
+  border: 3px solid var(--text-color);
+  font-family: var(--font-family3);
+  width: 100px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  background: var(--text-color);
+  transition: 0.8s;
+}
+.booking form .col-auto .btn:hover {
+  background: none;
+  color: var(--text-color);
+}
+
 /*----------- about-page ------------*/
 
 .about-page .card {
   /* border: 2px solid red; */
-  width: 90%;
-  height: 30em;
+  width: 85%;
+  height: 33em;
 }
 .about-page .card .row {
   /* border: 2px solid; */
@@ -221,7 +258,6 @@ form::placeholder {
   height: 100%;
   object-fit: cover;
 }
-
 .row .col-md-8 .card-body {
   font-family: var(--font-family1);
 }
@@ -259,6 +295,7 @@ form::placeholder {
   /* border: 2px solid blue; */
   margin-top: 60px;
   margin-bottom: 20px;
+  
 }
 .carousel .carousel-inner .carousel-item {
   height: 85vh;
@@ -296,14 +333,23 @@ form::placeholder {
   /* border: 2px solid green; */
   width: 80%;
 }
+.row .col .card {
+  background-color: #31124a;
+  color: white;
+  border: none;
+}
+.row .col .card .card-body .card-title {
+  color: #f29a2e;
+}
 .destination-page-card .row .col .card {
   overflow: hidden;
+  transition: 0.8s;
 }
 .destination-page-card .row .col .card img {
   transition: 0.8s;
 }
-.destination-page-card .row .col .card:hover img {
-  transform: scale(.9);
+.destination-page-card .row .col .card:hover {
+  transform: translateY(-15px);
 }
 .destination-page-card .row .col .card .card-body h5 {
   font-family: var(--font-family1);
@@ -321,7 +367,7 @@ form::placeholder {
   transition: 0.8s;
 }
 .card .card-footer .btn:hover {
-  background: none;
+  background: #f29a2e;
   color: var(--text-color);
 }
 /*----------- contact-page ------------*/
@@ -345,7 +391,7 @@ form::placeholder {
     rgb(242, 154, 46, 0.7)
   );
 }
-.contact-content .contact-details:hover{
+.contact-content .contact-details:hover {
   background: linear-gradient(
     to bottom left,
     rgb(91, 38, 122, 0.7),
@@ -433,15 +479,51 @@ form::placeholder {
 /*----- footer --------*/
 footer {
   /* border: 2px solid red; */
-  height: 6em;
+  /* height: 6em; */
   width: 100%;
+  padding: 20px;
   background-color: #31124a;
+  font-family: var(--font-family1);
+}
+footer .row .col .card {
+  background-color: #31124a;
+  color: white;
+  width: auto;
+  border: none;
+}
+footer .row .col .card .card-body .card-title {
+  color: #f29a2e;
+}
+footer .row .col .card ul li {
+  border: none;
+  background-color: #31124a;
+  color: white;
+}
+footer .row .col .card ul .social {
+  color: #f29a2e;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+footer .row .col .card ul li a {
+  color: white;
+  transition: 0.6s;
+}
+footer .row .col .card ul li a:hover {
+  color: #f29a2e;
+}
+footer .row .col .card ul li {
+  color: white;
+  transition: 0.6s;
+}
+footer .row .col .card ul li:hover {
+  color: #f29a2e;
 }
 footer .foot {
   color: white;
   font-weight: 500;
   font-size: 1rem;
   font-family: var(--font-family3);
+  margin-top: 40px;
 }
 footer .foot-name {
   color: #f29a2e;
@@ -481,15 +563,20 @@ footer .foot-name {
     font-size: 0.9rem;
   }
 
+  /*--------- booking-page ----------*/
+  .booking form {
+    width: 100%;
+  }
+
   /*----------- about-page ------------*/
-  .about-page .card{
-    margin-bottom:20px ;
+  .about-page .card {
+    margin-bottom: 20px;
     height: 35em;
     width: 95%;
   }
 
   /*------- desination-page-card --------*/
-  .destination-page-card .row{
+  .destination-page-card .row {
     width: 95%;
   }
 
@@ -510,17 +597,20 @@ footer .foot-name {
   footer {
     text-align: center;
   }
+  footer .row .col .card {
+    width: 20rem;
+  }
 }
 
 /* -------mobile media------- */
 @media all and (max-width: 576px) {
   /*------- home-page -------*/
   .navbar {
-    width: 90%;
+    width: 95%;
     height: 10vh;
   }
   .navbar.navbar-expand-lg .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .icon .fa-user,
   .icon .fa-location-dot {
@@ -551,13 +641,14 @@ footer .foot-name {
   }
   .destination-types-card {
     height: auto;
-    width: auto;
+    width: 100%;
     bottom: 10px;
   }
   .destination-types-card .card {
-    width: 52px;
+    width: 55px;
     height: 100px;
     border-radius: 10px;
+    padding: 0;
   }
   .card-body i {
     font-size: 1rem;
@@ -568,53 +659,65 @@ footer .foot-name {
     font-size: 0.6rem;
   }
 
-   /*----------- about-page ------------*/
-   
-  .about-page .card{
+  /*--------- booking-page ---------*/
+  .wrapper .booking {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  .booking form {
+    width: 100%;
+  }
+
+  /*----------- about-page ------------*/
+
+  .about-page .card {
     height: auto;
     margin-top: 20px;
   }
   /*----------- destination-page ------------*/
-  .destination-page .destination-title{
+  .destination-page .destination-title {
     font-size: 1.5rem;
   }
-  .destination-page .carousel{
+  .destination-page .carousel {
     margin-top: 0px;
   }
-/*----------- contact-page ------------*/
-.contact-page .contact-content{
-  flex-direction: column;
-  height: auto;
-}
-.contact-content .contact-details{
-  height: auto;
-  width: auto;
-  padding: 20px;
-}
-.contact-details .contact-title{
-  font-size: 1.5rem;
-}
-.contact-details .card{
-  padding: 10px;
-  width: auto;
-}
-.contact-content .form-content{
-  height: auto;
-  width: auto;
-  padding: 15px;
-}
-.form-content form{
-  gap: 20px;
-}
-.form-content form .btn{
-  font-size: .9rem;
-  width: 150px;
-}
+  /*----------- contact-page ------------*/
+  .contact-page .contact-content {
+    flex-direction: column;
+    height: auto;
+  }
+  .contact-content .contact-details {
+    height: auto;
+    width: auto;
+    padding: 20px;
+  }
+  .contact-details .contact-title {
+    font-size: 1.5rem;
+  }
+  .contact-details .card {
+    padding: 10px;
+    width: auto;
+  }
+  .contact-content .form-content {
+    height: auto;
+    width: auto;
+    padding: 15px;
+  }
+  .form-content form {
+    gap: 20px;
+  }
+  .form-content form .btn {
+    font-size: 0.9rem;
+    width: 150px;
+  }
 
   /*------ footer ------*/
   footer {
     text-align: center;
     padding: 10px;
+  }
+  footer .row .col .card {
+    width: auto;
   }
   footer .foot {
     font-size: 0.8rem;
